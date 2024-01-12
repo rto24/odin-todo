@@ -1,4 +1,4 @@
-const container = document.getElementById('container');
+const container = document.getElementById('content');
 
 function createHtml(type, id, classList, content) {
   const element = document.createElement(type);
