@@ -1,3 +1,5 @@
+const container = document.getElementById('container');
+
 function createHtml(type, id, classList, content) {
   const element = document.createElement(type);
   if (id) element.id = id;
@@ -8,4 +10,4 @@ function createHtml(type, id, classList, content) {
   return element;
 }
 
-export { createHtml };
+export { createHtml, container };
