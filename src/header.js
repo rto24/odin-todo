@@ -1,11 +1,12 @@
-import { createHtml } from "./createDOM";
+import { createHtml, container } from "./createDOM";
 
 const render = () => {
+  // const header = document.createElement('div');
   const header = createHtml(
     'div',
     null,
     ['header'],
-    null,
+    '',
   );
 
   const headerTitle = createHtml(
@@ -14,6 +15,9 @@ const render = () => {
     ['header-title'],
     'To-Do List'
   );
+
+  container.appendChild(header);
+  header.appendChild(headerTitle);
 }
 
 export { render as renderHeader };
