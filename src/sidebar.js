@@ -15,6 +15,8 @@ const render = () => {
     'My Tasks'
   );
 
+  container.appendChild(sidebar);
+  sidebar.appendChild(sidebarLabel);
 }
 
 export { render as renderSidebar };
